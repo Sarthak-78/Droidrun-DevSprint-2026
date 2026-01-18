@@ -5,7 +5,7 @@ from droidrun import AgentConfig
 def get_llm():
     return GoogleGenAI(
         api_key=os.environ["GOOGLE_API_KEY"],
-        model="models/gemini-2.5-flash-lite"
+        model="models/gemini-2.5-pro"
     )
 
 def get_agent_config():
@@ -14,3 +14,4 @@ def get_agent_config():
         step_timeout=10,
         retry_on_failure=True
     )
+
